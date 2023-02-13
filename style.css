@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.youbi>th:nth-child(1) {
+  color: red;
+}
+
+.youbi>th:nth-child(7) {
+  color: blue;
+}
+
+tbody>tr>td:nth-child(1) {
+  color: red;
+}
+
+tbody>tr>td:nth-child(7) {
+  color: blue;
+}
+
+thead, tfoot {
+  background-color: gray;
+}
+
+th, td {
+  padding: 5px;
+  text-align: center;
+  border: solid 1px black;
+}
+
+form {
+  width: 224px;
+  display: flex;
+  justify-content: space-evenly;
+}

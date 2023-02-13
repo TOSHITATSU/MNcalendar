@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY_MANNEN_calendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th><button id="prev">⇦</button></th>
+        <th id="title" colspan="5">2023/1</th>
+        <th><button id="next">⇨</button></th>
+      </tr>
+      <tr class="youbi">
+        <th>日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th>
+      </tr>
+    </thead>
+
+    <tbody>  
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td id="today" colspan="7"><button>今年の今月へ</button></td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <form name="sDate">
+    <select id="sYear" onchange="changeCalendar()"></select>年
+    <select id="sMonth" onchange="changeCalendar()"></select>月
+  </form>
+
+  <script src="./main.js"></script>
+</body>
+</html>
